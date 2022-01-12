@@ -15,6 +15,7 @@ client.on("messageCreate", (ms) => {
     ms.reply("pong");
   }
 });
+// getting tagged person's info to add to db and add their coin(tips) properly
 client.on("messageCreate", (msg) => {
   const tagged = Array.from(msg.mentions.users.values());
   //console.log(msg.author.username + "#" + msg.author.discriminator);
